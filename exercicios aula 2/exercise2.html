@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script type="text/javascript">
+     let matricula = prompt('Caro aluno, por favor informe o número da sua matrícula.');
+     let nota1 = parseInt(prompt('Insira sua nota da P1\n\nObs: Essa nota tem peso 2 na sua média geral.'));
+     let nota2 = parseInt(prompt('Agora, insira a sua nota da P2\n\nObs: Essa nota tem peso 1 na sua média geral.'));
+   
+    function calcula_media_ponderada(nota1, nota2){
+        return ((nota1*2)+nota2)/3;
+    };
+    
+    alert('A média final do aluno ' + matricula + ' neste bimestre é: ' + calcula_media_ponderada(nota1, nota2).toFixed(2));
+
+    i
+    </script>
+
+  </body>
+</html>

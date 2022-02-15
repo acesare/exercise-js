@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script type="text/javascript">
+     let matricula = prompt('Caro aluno, por favor informe o número da sua matrícula.');
+     let nota1 = parseInt(prompt('Insira sua nota da P1\n\nObs: Essa nota tem peso 2 na sua média geral.'));
+     let nota2 = parseInt(prompt('Agora, insira a sua nota da P2\n\nObs: Essa nota tem peso 1 na sua média geral.'));
+     let matricula_2 = prompt('Caro aluno, por favor informe o número da matrícula do segundo aluno.');
+     let nota1_2 = parseInt(prompt('Insira a nota da P1 do segundo aluno\n\nObs: Essa nota tem peso 2 na média geral.'));
+     let nota2_2= parseInt(prompt('Agora, insira a nota da P2 do segundo aluno\n\nObs: Essa nota tem peso 1 na média geral.'));
+   
+    function calcula_media_ponderada(x, y){
+        return ((x*2)+y)/3;
+    };
+    
+    alert('A média final do aluno pertencente à matrícula: ' + matricula + ' neste bimestre é: ' + calcula_media_ponderada(nota1, nota2).toFixed(2)+
+    '\n\nE a média final do aluno pertencente à matrícula: '+ matricula_2 + ' neste bimestre é: ' + calcula_media_ponderada(nota1_2, nota2_2).toFixed(2));
+    </script>
+
+  </body>
+</html>
