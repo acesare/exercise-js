@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script type="text/javascript">
+     let salario_atual = parseInt(prompt('Por favor, informe o seu salário atual: '));
+
+     let reajuste1 = 20
+     let reajuste2 = 15
+     let reajuste3 = 10
+     let reajuste4 = 05
+     
+     let novo_salario1 = salario_atual*((reajuste1/100)+1);
+     let novo_salario2 = salario_atual*((reajuste2/100)+1);
+     let novo_salario3 = salario_atual*((reajuste3/100)+1);
+     let novo_salario4 = salario_atual*((reajuste4/100)+1);
+
+
+     if (salario_atual <= 280.00){
+         alert('Seu atual salário é: R$' + salario_atual + 
+         '\nO seu percentual de aumento será de: ' + reajuste1 + '%' +
+         '\nO seu aumento real será de: R$' + (novo_salario1-salario_atual).toFixed(2) +
+         '\nSeu novo salário será: R$' + novo_salario1 )
+     } else if (salario_atual < 700.00){
+        alert('Seu atual salário é: R$' + salario_atual + 
+         '\nO seu percentual de aumento será de: ' + reajuste2 + '%' +
+         '\nO seu aumento real será de: R$' + (novo_salario2-salario_atual).toFixed(2) +
+         '\nSeu novo salário será: R$' + novo_salario2.toFixed(2));
+     } else if (salario_atual < 1500.00){
+        alert('Seu atual salário é: R$' + salario_atual + 
+         '\nO seu percentual de aumento será de: ' + reajuste3 + '%' +
+         '\nO seu aumento real será de: R$' + (novo_salario3-salario_atual).toFixed(2) +
+         '\nSeu novo salário será: R$' + novo_salario3.toFixed(2));
+     } else {
+        alert('Seu atual salário é: R$' + salario_atual + 
+         '\nO seu percentual de aumento será de: ' + reajuste4 + '%' +
+         '\nO seu aumento real será de: R$' + (novo_salario4-salario_atual).toFixed(2) +
+         '\nSeu novo salário será: R$' + novo_salario4.toFixed(2));
+     };
+    </script>
+
+  </body>
+</html>

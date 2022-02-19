@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script type="text/javascript">
+   let valor_hora = parseInt(prompt('Por favor, informe o valor da sua hora de trabalho: '));
+   let horas_trabalhadas = parseInt(prompt('Agora, informe a quantidade de horas que você trabalha em um mês'));
+   let salario = valor_hora*horas_trabalhadas;
+
+ const calcula_sindicato  = salario*0.03;
+ const calcula_fgts = salario*0.11;
+
+ if(salario<=900){
+     IR = 0
+ } else if (salario<=1500){
+     IR = salario*0.05
+ } else if(salario<=2500){
+     IR = salario*0.10
+ } else{
+     IR = salario*0.20
+ };
+   
+   let salario_liquido = (salario-calcula_sindicato)-IR;
+
+   alert('O seu salário bruto é: ' + salario +
+   '\n\nO seu salário líquido é: ' + salario_liquido + 
+   '\n\nA sua contribução para o sindicato foi de: ' + calcula_sindicato+ '\nObs: a contribuição sindical é descontada do seu salário bruto' +
+   '\n\nA sua contribuição para o FGTS foi de: ' + calcula_fgts + '\nObs: a contribuição do FGTS não é descontada do seu salário bruto' +
+   '\n\nO seu Imposto de Renda é de: ' + IR + '\nObs: esse valor é descontado do seu salário bruto');
+
+</script>
+
+  </body>
+</html>
